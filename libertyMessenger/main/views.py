@@ -11,6 +11,8 @@ def logorreg(req):
     return render(req, 'logorreg.html')
 
 def main(req):
-    return HttpResponseRedirect('/logorreg')
+    return render(req, 'index.html')
 
-# def register(req):
+
+def register(req):
+    username = req.POST.get()
