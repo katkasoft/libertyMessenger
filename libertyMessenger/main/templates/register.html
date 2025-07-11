@@ -12,15 +12,14 @@
 </head>
 <body>
     <p id="TitleAnimatedFlow">LIBERTY</p>
-    <p id="TitleRegOrLog">Зарегистрироваться</p>
-    <div id="regform">
-        <input type="text" placeholder="Ваше имя" id="username"> <br>
-        <input type="email" placeholder="Введите адресс Вашей электронной почты" id="email"> <br>
-        <input type="password" placeholder="Ваш пароль" id="pass"> <br>
-        <input type="password" placeholder="Подтверждение пароля" id="confirmedPass"> <br>
-        <button id="ConfirmButton" id="confirmButton" onclick="confirm()">подтверждение</button>
-        <p style="color: red;"></p>
-    </div>
-    <script src="/static/register.js"></script>
+    <p id="TitleRegOrLog">войти</p>
+
+    <form>
+        <input type="text" placeholder="Ваше имя" name="username"> <br>
+        <input type="email" placeholder="Введите адресс Вашей электронной почты" name="email"> <br>
+        <input type="password" placeholder="Ваш пароль" name="pass"> <br>
+        <input type="password" placeholder="Подтверждение пароля" name="confirmedPass"> <br>
+        <button id="ConfirmButton" name="confirmButton">подтверждение</button>
+    </form>
 </body>
 </html>

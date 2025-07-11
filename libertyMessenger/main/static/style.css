@@ -52,22 +52,40 @@ body {
     font-size: 70px;
     font-style: normal;
     animation: LoginAnim 1s forwards;
+    animation-delay: 0.5s;
+}
+
+#TitleRegOrLog {
+    color:rgba(255,255,255, 0);
+    font-size: 35px;
+    text-align: center;
+    animation: fadein 2s forwards;
+}
+
+@keyframes fadein {
+    80% {
+        color: rgba(255,255,255, 0)
+    }
+    
+    to {
+        color: rgba(255,255,255, 1)
+    }
 }
 
 @keyframes LoginAnim {
     from {
         size: 100%;
-        font-size: large;
         margin-top: 5%;
     }
 
-    50% {
-        margin-top: 3%;
+    60% {
+        margin-top: 1%;
     }
 
     to {
         size:50%;
         font-size: 24px;
+        margin-top:3%
     }
 }
 
@@ -132,5 +150,29 @@ body {
     transform: translate(0%, 0%);
     bottom: 0px;
     margin: 0px;
+}
+
+#regForm {
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#regForm *:not(:last-child) {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgb(201, 201, 201);
+    border-width: 0px;
+    width: 380px;
+    height: 40px;
 }
 
