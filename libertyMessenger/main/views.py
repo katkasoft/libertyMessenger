@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
-def register(req):
+def registerview(req):
     return render(req, 'register.html')
 
-def login(req):
+def loginview(req):
     return render(req, 'login.html')
 
 def logorreg(req):
@@ -12,3 +12,5 @@ def logorreg(req):
 
 def main(req):
     return HttpResponseRedirect('/logorreg')
+
+# def register(req):
