@@ -7,19 +7,23 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liberty - Зарегистрироваться</title>
 </head>
 <body>
     <p id="TitleAnimatedFlow">LIBERTY</p>
-    <p id="TitleRegOrLog">Зарегестрироваться</p>
+    <p id="TitleRegOrLog">Зарегистрироваться</p>
 
     <div id="regForm">
-        <input type="text" placeholder="Ваше имя" name="username"> <br>
-        <input type="email" placeholder="Введите адресс Вашей электронной почты" name="email"> <br>
-        <input type="password" placeholder="Ваш пароль" name="pass"> <br>
-        <input type="password" placeholder="Подтверждение пароля" name="confirmedPass"> <br>
-        <button id="ConfirmButton" name="confirmButton">подтверждение</button>
-    </form>
+        <input type="text" placeholder="Ваше имя" id="username"> <br>
+        <input type="email" placeholder="Введите адрес Вашей электронной почты" id="email"> <br>
+        <input type="password" placeholder="Ваш пароль" id="pass"> <br>
+        <input type="password" placeholder="Подтверждение пароля" id="confirmedPass"> <br>
+        <button id="confirmButton" onclick="confirm()">ПОДТВЕРДИТЬ</button>
+    </div>
+
+    <p id="TeamResistorsTitle">Team Resistance</p>
+    
+    <script src="/static/register.js"></script>
 </body>
 </html>
