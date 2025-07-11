@@ -19,13 +19,13 @@ body {
     border-color: black;
     background-color: white;
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 524.4px;
+    width: 325px;
 }
 
 #Title {
@@ -103,8 +103,7 @@ body {
     border-radius: 15px;
     border-style: none;
     background-color: rgb(217, 217, 217);
-    width: 400px;
-    height: 70px;
+    height: 35px;
     text-align: center;
     animation: fillout 0.5s forwards;
     font-size: large;
@@ -123,19 +122,19 @@ body {
 
 @keyframes fillout {
     from {
-        width: 450px
+        width: 300px;
     }
     to {
-        width: 400px;
+        width: 280px;
     }
 }
 
 @keyframes fillin {
     from {
-        width: 400px;
+        width: 280px;
     }
     to {
-        width: 450px;
+        width: 300px;
     }
 }
 
