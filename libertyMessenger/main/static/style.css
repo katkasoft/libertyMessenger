@@ -7,8 +7,10 @@
 body {
     background-color: rgb(47,48,48);
     background-image: url('Background-Image.png');  
-    background-repeat: no-repeat;  
-    background-size: cover; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -21,13 +23,15 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    padding: 5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 524.4px;
 }
 
 #Title {
     margin-top: 5%;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
+    /* margin-left: 50%; */
+    text-align: center;
     color: white;
     text-align: center;
     font-family: "Dela Gothic One", sans-serif;
@@ -54,12 +58,13 @@ body {
     width: 400px;
     height: 70px;
     text-align: center;
+    animation: fillout 1s forwards;
+    font-size: large;
 }
 
 .button:hover {
     background-color: rgb(201, 201, 201);
-    animation-duration: 1s;
-    animation-name: fillin;
+    animation: fillin 1s forwards;
 }
 
 .button:not(:hover) {
