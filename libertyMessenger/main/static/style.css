@@ -1,0 +1,88 @@
+* {
+    font-family: "Source Code Pro", monospace;
+    font-weight: bold;
+}
+
+
+body {
+    background-color: rgb(47,48,48);
+    background-image: url('Background-Image.png');  
+    background-repeat: no-repeat;  
+    background-size: cover; 
+}
+
+
+#center {
+    border-radius: 15px;
+    border-color: black;
+    background-color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 5%;
+}
+
+#Title {
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    font-style: normal;
+    animation: 3s infinite alternate bouncing;
+}
+
+@keyframes bouncing {
+    from {
+        margin-top: 5%; 
+    }
+    to {
+        margin-top: 8%;
+    }
+}
+
+
+.button {
+    border-radius: 15px;
+    border-style: none;
+    background-color: rgb(217, 217, 217);
+    width: 400px;
+    height: 70px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgb(201, 201, 201);
+    animation-duration: 1s;
+    animation-name: fillin;
+}
+
+
+@keyframes fillin {
+    from {
+        width: 400px;
+    }
+    to {
+        width: 450px;
+    }
+}
+
+#or {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#TeamResistorsTitle {
+    color: rgb(59, 58, 58);
+    font-size: 35px;
+    position: absolute;
+    transform: translate(0%, 0%);
+    bottom: 0px;
+    margin: 0px;
+}
+
