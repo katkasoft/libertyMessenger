@@ -41,6 +41,36 @@ body {
     animation: 3s infinite alternate bouncing;
 }
 
+#TitleAnimatedFlow {
+    margin-top: 5%;
+    /* margin-left: 50%; */
+    text-align: center;
+    color: white;
+    text-align: center;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    font-style: normal;
+    animation: LoginAnim 1s forwards;
+}
+
+@keyframes LoginAnim {
+    from {
+        size: 100%;
+        font-size: large;
+        margin-top: 5%;
+    }
+
+    50% {
+        margin-top: 3%;
+    }
+
+    to {
+        size:50%;
+        font-size: 24px;
+    }
+}
+
 @keyframes bouncing {
     from {
         margin-top: 5%; 
@@ -74,7 +104,7 @@ body {
 
 @keyframes fillout {
     from {
-        width: 450px;
+        width: 450px
     }
     to {
         width: 400px;
